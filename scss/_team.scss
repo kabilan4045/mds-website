@@ -1,0 +1,526 @@
+/*** 
+
+====================================================================
+    Team Section
+====================================================================
+
+***/
+.ks-team {
+    &-area {
+        position: relative;
+        z-index: 1;
+        background-color: var(--theme-color-dark);
+        @include background;
+        padding-top: 110px;
+        padding-bottom: 90px;
+        & .ks-section-title-wrap {
+                margin-bottom: 50px;
+        }
+    }
+    &-content {
+        & span {
+            font-weight: 500;
+            font-size: 18px;
+            @include media-breakpoint-down(xl) {
+                font-size: 16px;
+            }
+        }
+    }
+    &-title {
+        margin-bottom: 0;
+        @include media-breakpoint-down(xl) {
+            font-size: 24px;
+        }
+    }
+    &-thumb {
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 84%;
+            width: 100%;
+            z-index: -2;
+            border-radius: 400px 400px 0 0;
+            @include transition(all .3s ease);
+            background: linear-gradient(360deg, #0938d3 0%, #13132e 100%);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 70%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0;
+            border-radius: 400px 400px 0 0;
+            @include transition(all .3s ease);
+            background: linear-gradient(180deg, #fff826 0%, #0a0a79 100%);
+        }
+    }
+    &-share {
+        position: absolute;
+        top: 23%;
+        right: 27px;
+        & button {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 1.5;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        background: var(--theme-color-yellow);
+        }
+        &:hover {
+        & .ks-team-social {        
+            opacity: 1;
+            visibility: visible;
+            & a {
+            &:nth-child(1){
+                transform: translateY(0px);
+            }
+            &:nth-child(2){
+                transform: translateY(0px);
+            }
+            &:nth-child(3){
+                transform: translateY(0px);
+            }
+            }
+        }
+        }
+    }
+    &-social {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        & > a {
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            line-height: 31px;
+            display: inline-block;
+            margin-top: 10px;
+            position: relative;
+            background: var(--theme-color-dark);
+            & svg,i {
+                position: relative;
+                z-index: 1;
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                transition: .3s;
+                transform: translate(-50%,-50%) scale(0);
+                background-color: var(--theme-color1);
+            }
+            &:hover {
+                &::before {
+                    transform: translate(-50%,-50%) scale(1);
+                }
+            }
+            &:nth-child(1){
+            transition: .3s;
+            transform: translateY(-20px);
+            }
+            &:nth-child(2){
+                transition: .5s;
+                transform: translateY(-30px);
+            }
+            &:nth-child(3){
+                transition: .7s;
+                transform: translateY(-40px);
+            }
+        }
+    }
+    &-item {
+        margin-bottom: 30px;
+        &:hover {
+            & .ks-team-thumb {        
+                &::after {
+                    opacity: 1;
+                    height: 84%;
+                }
+            }     
+        
+        }
+    }
+}
+
+.team-section{
+    position: relative;
+    .shape-1{
+        left: 0;
+        position: absolute;
+        top: 15%;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Team Section Two
+====================================================================
+
+***/
+
+// Team area start here ***
+.team-section-two {
+    position: relative;
+    .outer-box{
+        border-radius: 50px;
+        background: var(--gradient-2);
+        margin: 0 auto;
+        max-width: 1860px;
+        overflow: hidden;
+        padding: 120px 0 70px;
+        position: relative;
+        &:before{
+            background-image: url(../images/background/home3-team-bg.jpg);
+            background-size: cover;
+            content: "";
+            height: 100%;
+            left: 0;
+            opacity: 0.2;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+
+.team-block-two {
+    margin-bottom: 50px;
+    @include media-breakpoint-down(sm){
+        margin-bottom: 70px;
+    }
+    .inner-box {
+        background-color: var(--theme-color-white);
+        border: 5px solid var(--theme-color1);
+        border-radius: 0px 130px 180px 180px;
+        position: relative;
+        &:before {
+            background-color: var(--theme-color1);
+            content: "";
+            @include overlay;
+            opacity: 0;
+            transform: scale(0);
+            border-radius: 0px 130px 180px 180px;
+            @include transition(all 300ms ease);
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+                transform: scale(1);
+            }
+            .image-box .image img {
+                transform: scale(1.1);
+            }
+            .content-box {
+                .icon-box{
+                    .icon{
+                        background-color: var(--theme-color-yellow);
+                        color: var(--theme-color-dark);
+                    }
+                }
+                .name,
+                .designation {
+                    color: var(--theme-color-light);
+                }
+            }
+        }
+        .image-box {
+            position: relative;
+            .image {
+                position: relative;
+                overflow: hidden;
+                border-radius: 0 130px 180px 180px;
+                margin-bottom: 0;
+                img {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    @include transition(all 300ms ease);
+                }
+            }
+        }
+
+        .content-box {
+            position: relative;
+            padding-top: 10px;
+            text-align: center;
+            .name {
+                position: relative;
+                margin-bottom: 0;
+                a:hover {
+                    color: var(--theme-color2);
+                }
+            }
+            .designation {
+                position: relative;
+                font-size: 12px;
+                line-height: 16px;
+                padding-bottom: 12px;
+                @include transition(all 300ms ease);
+            }
+            .icon-box{
+                position: relative;
+                cursor: pointer;
+                @include flex-center;
+                margin-bottom: -30px;
+                z-index: 5;
+                &:hover {
+                    .icon:after {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    .social-links {
+                        transform: scale(1);
+                        visibility: visible;
+                    }
+                }
+                .icon{
+                    position: relative;
+                    display: block;
+                    height: 60px;
+                    width: 60px;
+                    @include flex-center;
+                    font-size: 26px;
+                    border-radius: 50%;
+                    color: var(--theme-color-light);
+                    background-color: var(--theme-color1);
+                    &:before {
+                        position: relative;
+                        z-index: 2;
+                    }
+                    &:after {
+                        content: "";
+                        @include overlay;
+                        opacity: 0;
+                        transform: scale(0);
+                        border-radius: 50%;
+                        background-color: var(--theme-color2);
+                        @include transition(all 300ms ease);
+                        z-index: 1;
+                    }
+                }
+                .social-links {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 70px;
+                    margin-left: -18px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 8px;
+                    transform-origin: bottom;
+                    transform: scaleY(0);
+                    visibility: hidden;
+                    z-index: 5;
+                    @include transition(all 500ms ease);
+                    a {
+                        background-color: var(--theme-color-white);
+                        border-radius: 50%;
+                        color: var(--theme-color-dark);
+                        @include flex-center;
+                        font-size: var(--body-font-size);
+                        height: 36px;
+                        position: relative;
+                        width: 36px;
+                        @include transition(all 300ms ease);
+                        &:hover {
+                            color: var(--theme-color-white);
+                            background-color: var(--theme-color-dark);
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+    Team Section Three
+====================================================================
+
+***/
+
+// Team area start here ***
+.team-section-three {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.team-block-three {
+    .inner-box {
+        background-color: var(--theme-color-white);
+        position: relative;
+        @include transition(all 300ms ease);
+        z-index: 1;
+        .image {
+            border-radius: 0px 135px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            @include transition(all 300ms ease);
+            position: relative;
+            img {
+                width: 100%;
+                @include transition(all 300ms ease);
+            }
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                    -135deg,
+                    rgba(23, 23, 23, 0) 0%,
+                    rgba(23, 23, 23, 0) 65%,
+                    var(--theme-color1) 100%
+                );
+                content: "";
+                z-index: 0;
+                opacity: 0;
+                @include transition(all 300ms ease);
+                visibility: hidden;
+            }
+        }
+        .content-box {
+            padding: 20px 0px;
+            .title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 0;
+            }
+            .sub-title {
+                color: var(--text-color);
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 28px;
+                margin-bottom: 0;
+                @include transition(all 300ms ease);
+            }
+        }
+        .socials {
+            background-color: var(--theme-color1);
+            border-radius: 50%;
+            bottom: 85px;
+            color: var(--theme-color-white);
+            cursor: pointer;
+            font-size: 20px;
+            height: 60px;
+            line-height: 60px;
+            position: absolute;
+            right: 10px;
+            text-align: center;
+            width: 60px;
+            @include transition(all 300ms ease);
+            .fa-plus {
+                @include transition(all 300ms ease);
+            }
+            ul {
+                align-items: center;
+                bottom: 45px;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                right: 10px;
+                visibility: hidden;
+                width: 40px;
+                li {
+                    line-height: 2;
+                    opacity: 0;
+                    transform: translateY(10px);
+                    visibility: hidden;
+                    @include transition(all 700ms ease);
+                    &:nth-child(2) {
+                        @include transition(all 500ms ease);
+                    }
+                    &:nth-child(3) {
+                        @include transition(all 400ms ease);
+                    }
+                    &:nth-child(4) {
+                        @include transition(all 300ms ease);
+                    }
+                    a {
+                        background-color: var(--theme-color-white);
+                        border-radius: 50%;
+                        color: var(--black3-color);
+                        display: inline-block;
+                        font-size: 13px;
+                        height: 36px;
+                        line-height: 36px;
+                        text-align: center;
+                        width: 36px;
+                        &:hover{
+                            background-color: var(--black3-color);
+                            color: var(--theme-color-white);
+                        }
+                    }
+                    i {
+                        @include transition(all 900ms ease);
+                    }
+                    &:hover {
+                        i {
+                            transform: rotateY(360deg);
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            .image {
+                overflow: hidden;
+                @include transition(all 300ms ease);
+                img {
+                    filter: grayscale(100%);
+                }
+                &::after {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .socials {
+                background-color: var(--theme-color-yellow);
+                color: var(--black3-color);
+                .fa-plus {
+                    display: inline-block;
+                    transform: rotate(135deg);
+                }
+                ul {
+                    visibility: visible;
+                    li {
+                        opacity: 1;
+                        transform: translateY(-20px);
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+// Team area end here ***

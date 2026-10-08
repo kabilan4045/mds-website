@@ -1,0 +1,113 @@
+
+/*Btn Style*/
+.ks-btn {
+    &-black {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1;
+        border-radius: 60px;
+        text-transform: uppercase;
+		padding: 21px 30px;
+		text-align: center;
+		transition: .4s;
+		position: relative;		
+		background-color: var(--theme-color-dark);
+        display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		@include media-breakpoint-down(xl) {
+			font-size: 12px;
+            padding: 16px 25px;
+        }
+		& span {
+			position: relative;
+			z-index: 1;
+			overflow: hidden;
+			display: inline-block;
+            color: var(--theme-color-white);
+			& span {
+				&.text-1 {
+					position: relative;
+					display: block;
+					transition: 0.3s;
+				}
+
+				&.text-2 {
+					position: absolute;
+					top: 100%;
+					display: block;
+					transition: 0.3s;
+				}
+			}
+		}
+
+		& i {
+			position: relative;
+			overflow: hidden;
+			width: 14px;
+			height: 14px;
+			display: inline-flex;
+			margin-left: 10px;
+
+			& svg {
+				transform: translateY(-1px);
+				position: absolute;
+				bottom: -1px;
+				left: 1px;
+				transition: all 0.2s ease-out;
+
+				&:last-child {
+					left: -12px;
+					bottom: -12px;
+					transform: translate(0, 0);
+					opacity: 0;
+				}
+			}
+		}
+
+		&:hover {
+			color: var(--it-common-white);
+			& span {				
+				& span {
+					&.text-1 {
+						-webkit-transform: translateY(-150%);
+						transform: translateY(-150%);
+					}
+
+					&.text-2 {
+						top: 50%;
+						-webkit-transform: translateY(-50%);
+						transform: translateY(-50%);
+					}
+				}
+			}
+
+			& i {
+				& svg:first-child {
+					transform: translate(16px, -16px);
+				}
+
+				& svg:last-child {
+					opacity: 1;
+					visibility: visible;
+					transform: translate(13px, -12px);
+				}
+			}
+		}
+		&.blue-bg {
+			background-color: var(--theme-color1);
+			& svg {
+				color: var(--theme-color-white);
+			}
+		}
+		&.yellow-bg {			
+			background-color: var(--theme-color-yellow);
+			& svg {
+				color: var(--theme-color-dark);
+			}
+			& span {
+				color: var(--theme-color-dark);
+			}
+		}
+    }
+}

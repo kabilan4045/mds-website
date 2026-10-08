@@ -1,0 +1,61 @@
+/*
+ * container.scss
+ * -----------------------------------------------
+*/
+
+.container {
+	.container {
+		width: 100%;
+	}
+}
+.container,
+.container-fluid {
+	.container,
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+section > .container, 
+section > .container-fluid {
+	padding-top: var(--container-pt);
+	padding-bottom: var(--container-pt);
+}
+
+
+
+@media (min-width: 1400px) {
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	    max-width: 1200px;
+	}
+	.container-1250 {
+		max-width: 1250px;
+	}
+	.container-1320 {
+		max-width: 1320px;
+	}
+	.container-1450 {
+		max-width: 1450px;
+	}
+	.container-1470 {
+		max-width: 1470px;
+	}
+	.container-1570 {
+		max-width: 1570px;
+	}
+	.container-1660 {
+		max-width: 1660px;
+	}
+	.container-1680 {
+		max-width: 1680px;
+	}
+	.container-1600 {
+		max-width: 1600px;
+	}
+	.container-1630 {
+		max-width: 1630px;
+	}
+	.container-1830 {
+		max-width: 1830px;
+	}
+}

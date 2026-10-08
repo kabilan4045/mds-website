@@ -1,0 +1,124 @@
+/*** 
+
+====================================================================
+    Faq Section
+====================================================================
+
+***/
+
+.faq-section {
+    position: relative;
+    padding: 120px 0;
+    .shape-17 {
+        position: absolute;
+        top: 30px;
+        left: 120px;
+        pointer-events: none;
+    }
+    
+    .content-column {
+        .inner-column {
+            position: relative;
+            .sec-title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .image-column {
+        .inner-column {
+            position: relative;
+            margin-right: -150px;
+            padding-left: 50px;
+            margin-top: -60px;
+            @include media-breakpoint-down(lg){
+                margin-right: 0;
+                padding-left: 0;
+                margin-top: 0;
+                text-align: center;
+            }
+            .image {
+                position: relative;
+                margin-bottom: 0;
+                width: 100%;
+                z-index: 5;
+                @include media-breakpoint-down(lg){
+                    width: 70%;
+                    margin: 0 auto;
+                }
+                @include media-breakpoint-down(md){
+                    width: 90%;
+                }
+                @include media-breakpoint-down(sm){
+                    width: 100%;
+                }
+                img {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+            .icon-20 {
+                position: absolute;
+                bottom: 15px;
+                right: -155px;
+                z-index: 6;
+                @include media-breakpoint-down(xxl){
+                    right: 0;
+                }
+                @include media-breakpoint-down(md){
+                    bottom: -100px;
+                    right: -60px;
+                }
+                @include media-breakpoint-down(sm){
+                    display: none;
+                }
+            }
+            .icon-21 {
+                position: absolute;
+                top: 40px;
+                left: -70px;
+                @include media-breakpoint-down(lg){display: none;}
+            }
+            .icon-22 {
+                position: absolute;
+                bottom: 40px;
+                left: 10px;
+                animation: fa-spin 10s infinite linear;
+                @include media-breakpoint-down(md){display: none;}
+            }
+            .icon-23 {
+                position: absolute;
+                top: 230px;
+                right: 40px;
+                z-index: 2;
+                animation: fa-spin 10s infinite linear;
+                @include media-breakpoint-down(md){display: none;}
+            }
+            .icon-24 {
+                position: absolute;
+                bottom: 60px;
+                left: -40px;
+                z-index: 1;
+                @include media-breakpoint-down(xl){
+                    bottom: 0;
+                }
+                @include media-breakpoint-down(lg){
+                    left: 0;
+                }
+                @include media-breakpoint-down(md){display: none;}
+            }
+            .icon-25 {
+                position: absolute;
+                top: -80px;
+                right: -90px;
+                @include media-breakpoint-down(sm){display: none;}
+            }
+            .shape-18 {
+                position: absolute;
+                top: 0;
+                right: -280px;
+                @include media-breakpoint-down(sm){display: none;}
+            }
+        }
+    }
+}

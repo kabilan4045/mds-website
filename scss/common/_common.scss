@@ -1,0 +1,106 @@
+// ******* common scss *******//
+
+.p-relative {
+  position: relative;
+}
+.fix {
+  overflow: hidden;
+}
+
+.z-index-1 {
+  position: relative;
+  z-index: 1;
+}
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}
+.border-line {
+    display: inline;
+    background-repeat: no-repeat;
+    background-size: 0% 1px, 0 1px;
+    background-position: 100% 100%, 0 100%;
+    transition: background-size 0.3s linear;
+    background-image: linear-gradient(currentcolor, currentcolor), linear-gradient(currentcolor, currentcolor);
+    &:hover {
+        background-size: 0% 1px, 100% 1px;
+    }
+}
+.hover-yellow {
+  @include transition(all .3s ease);
+  &:hover {
+    color: var(--theme-color-yellow);
+  }
+}
+.hover-blue {
+  @include transition(all .3s ease);
+  &:hover {
+    color: var(--theme-color1);
+  }
+}
+.ks-mlr {
+  margin: 0 30px;
+  border-radius: 50px;
+    @include media-breakpoint-down(xl){
+        border-radius: 0 !important;
+        margin: 0;
+    }
+}
+.slider-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+
+.gx-10 {
+    --bs-gutter-x: 10px;
+}
+.gx-15 {
+    --bs-gutter-x: 15px;
+}
+.gx-20 {
+    --bs-gutter-x: 20px;
+}
+.gx-25 {
+    --bs-gutter-x: 25px;
+}
+.gx-30 {
+    --bs-gutter-x: 30px;
+}
+.gx-35 {
+    --bs-gutter-x: 35px;
+}
+.gx-40 {
+    --bs-gutter-x: 40px;
+}
+
+.color3 {
+    color: var(--theme-color3) !important;
+}
+
+.theme-bg {
+	background: var(--theme-color-yellow);
+}
+.black-bg {
+	background: var(--theme-color-dark);
+}
+.black2-bg {
+	background: var(--black2-color);
+}
+.gray-bg {
+	background: var(--gray-color);
+}
+.white-bg {
+	background: var(--theme-color-white);
+}
+.blue-bg {
+	background: var(--theme-color1);
+}
+.gradient-bg {
+	background: var(--gradient-1);
+}
+.gradient-bg-2 {
+    background: var(--gradient-2);
+}
+.yellow-bg {
+	background: var(--theme-color-yellow);
+}

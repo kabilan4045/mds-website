@@ -1,0 +1,227 @@
+/*** 
+
+====================================================================
+  cta Section
+====================================================================
+
+***/
+.ks-cta {
+    &-title {
+        font-size: 42px;
+        font-weight: 600;
+        @include media-breakpoint-down (xxl) {
+            font-size: 38px;
+        }
+        @include media-breakpoint-down (lg) {
+            font-size: 30px;
+        }
+        @include media-breakpoint-down (md) {
+            font-size: 30px;
+            margin-bottom: 30px !important;
+            & br {
+                display: none;
+            }
+        }
+    }
+    &-area {
+        &.ks-mlr {
+            padding: 105px 0;
+            border-radius: 50px 50px 0 0;
+            @include media-breakpoint-down (xxl) {
+                padding: 90px 30px;
+            }
+            @include media-breakpoint-down (md) {
+                padding: 90px 0px;
+            }
+        }
+        
+        & .ks-btn-black {
+            @include media-breakpoint-down (xxl) {
+                margin-right: 120px;
+            }
+            @include media-breakpoint-down (xl) {
+                margin-right: 0;
+            }
+        }
+
+    }
+    &-wrap {
+        @include media-breakpoint-down(md) {
+            flex-wrap: wrap;
+        }
+    }
+    &-shape {
+        &-1 {
+            position: absolute;
+            bottom: 0;
+            right: 8.5%;
+            z-index: -1;
+            @include media-breakpoint-down (xxl) {
+                right: 3%;
+            }
+            @include media-breakpoint-down (xl) {
+                display: none;
+            }
+        }
+        &-2 {
+            position: absolute;
+            top: -10%;
+            left: 2.3%;
+            z-index: -1;
+        }
+    }
+    &-home4{
+        position: relative;
+        & .outer-box{
+            background: linear-gradient(289.05deg, #FFF826 16.47%, #0938D3 76.33%);
+            border-radius: 100px 100px 0px 0px;
+            max-width: 1410px;
+            padding: 100px 0;
+            position: relative;
+            @include media-breakpoint-down(lg) {
+                border-radius: 0;
+                padding: 50px 0;
+            }
+            & .floating-img{
+                bottom: 0;
+                left: 30px;
+                position: absolute;
+                @media screen and (max-width: 1299px){
+                    left: 0;
+                }
+                @include media-breakpoint-down(xl) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.ks-banner {
+    &-ptb {
+        margin: 0 30px;
+        padding: 200px 0;
+        border-radius: 30px 30px 0 0;
+        @include media-breakpoint-down (xxl) {
+            padding: 140px 0;
+        }
+        @include media-breakpoint-down (lg) {
+            padding: 100px 20px;
+            border-radius: 30px;
+        }
+        @include media-breakpoint-down (md) {
+            padding: 80px 15px;
+            margin: 0 15px;
+        }
+    }
+    &-thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .4;
+        z-index: -1;
+        object-fit: cover;
+        border-radius: 30px 30px 0 0;
+        @include media-breakpoint-down (lg) {
+            border-radius: 0px;
+        }
+    }
+    &-title {
+        color: var(--theme-color-white);
+        font-weight: 700;
+        @include responsive-font(25px, 3.75vw, 60px, 1.17);
+        @include media-breakpoint-down (md) {
+            & br {
+                display: none;
+            }
+        }
+    }
+    &-video {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 470px;
+        height: 417px;
+        z-index: 1;
+        background: var(--gradient-1);
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        @include media-breakpoint-down(xl) {
+            width: 380px;
+            height: 300px;
+        }
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        & .shape {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-icon {
+        padding: 30px;
+        line-height: 0;
+        display: inline-block;
+        position: absolute;
+        bottom: 45px;
+        left: 35px;
+        @include media-breakpoint-down(xl) {
+            padding: 20px;
+            bottom: 30px;
+        }
+        & i {
+            display: inline-block;
+            height: 120px;
+            width: 120px;
+            line-height: 120px;
+            padding-left: 4px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: var(--theme-color-white);
+            @include media-breakpoint-down(xl) {
+                height: 70px;
+                width: 70px;
+                line-height: 70px;
+            }
+            & svg {
+                @include media-breakpoint-down(xl) {
+                    width: 15px;
+                }
+            }
+        }
+    }
+    &-text {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        transform: translateY(-50%);
+        & img {
+            animation: animationglob 6s cubic-bezier(1, 0.99, 0.03, 0.01) infinite;
+        }
+    }
+    &-area{
+        &-home4{
+            border-radius: 30px 30px 0px 0px;
+            padding: 120px 0;
+            @include media-breakpoint-down(md) {
+                border-radius: 0;
+            }
+            &-title{
+                color: var(--theme-color-white);
+                @include responsive-font(24px, 3.75vw, 54px, 1.11);
+            }
+            & .ks-banner-thumb{
+                @include media-breakpoint-down(md) {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
