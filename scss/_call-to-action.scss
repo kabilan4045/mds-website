@@ -57,12 +57,12 @@
             right: 0;
             @include overlay;
             border-radius: 100px 100px 0 0;
-            background: linear-gradient(to right,#6B43E3 68% 33%,rgba(87, 30, 136, 0) 100%);
+            background: linear-gradient(to right,#D6339A 68% 33%,rgba(87, 30, 136, 0) 100%);
             @include media-breakpoint-down(lg){
                 border-radius: 0;
             }
             @include media-breakpoint-down(sm){
-                background: linear-gradient(to right,#6B43E3 68% 100%,rgba(87, 30, 136, 0) 100%);
+                background: linear-gradient(to right,#D6339A 68% 100%,rgba(87, 30, 136, 0) 100%);
             }
         }
         .icon-32 {

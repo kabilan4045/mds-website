@@ -1,5 +1,5 @@
 :root[data-tm-layout=dark] {
-  --dark-color1: #0B0B20;
+  --dark-color1: #111111;
   --dark-color2: #222429;
   --dark-color3: #2b242b;
   --theme-color-white: var(--dark-color1);

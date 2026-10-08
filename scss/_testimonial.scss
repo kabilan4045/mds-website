@@ -172,7 +172,7 @@ Testimonial Section
   padding: 60px 80px 20px 80px;
   border-radius: 0 0 100px 100px;
   box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.08);
-  background: linear-gradient(322deg, #fff826 0%, #0938d3 100%);
+  background: linear-gradient(322deg, #FFC2E6 0%, #FF66C4 100%);
   @include media-breakpoint-down(lg) {
     margin-left: 0;
     border-radius: 20px;
@@ -203,7 +203,7 @@ Testimonial Section
     border-radius: 50%;
     @include transition(all .3s ease);
     background-color: transparent;
-    border: 1px solid rgba(19, 19, 46, 0.25);
+    border: 1px solid rgba(17, 17, 17, 0.25);
     @include media-breakpoint-down(lg) {
       height: 38px;
       width: 38px;
@@ -222,7 +222,7 @@ Testimonial Section
 &-progress{
   width: 100%;
   & .swiper-pagination-progressbar {
-    background: rgba($color: #13132E, $alpha: 0.2);
+    background: rgba($color: #111111, $alpha: 0.2);
     & .swiper-pagination-progressbar-fill {
       background: var(--theme-color-dark);
     }
@@ -462,7 +462,7 @@ Testimonial Section
     padding: 30px;
   }
   &:before {
-    background: linear-gradient(289.05deg, #FFF826 16.47%, #0938D3 76.33%);
+    background: linear-gradient(289.05deg, #FFC2E6 16.47%, #FF66C4 76.33%);
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.08);
     border-radius: 100px;
     content: "";

@@ -46,7 +46,7 @@
             z-index: -2;
             border-radius: 400px 400px 0 0;
             @include transition(all .3s ease);
-            background: linear-gradient(360deg, #0938d3 0%, #13132e 100%);
+            background: linear-gradient(360deg, #FF66C4 0%, #111111 100%);
         }
         &::after {
             content: '';
@@ -59,7 +59,7 @@
             opacity: 0;
             border-radius: 400px 400px 0 0;
             @include transition(all .3s ease);
-            background: linear-gradient(180deg, #fff826 0%, #0a0a79 100%);
+            background: linear-gradient(180deg, #FFC2E6 0%, #0a0a79 100%);
         }
     }
     &-share {

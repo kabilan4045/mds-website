@@ -30,7 +30,7 @@
       font-weight: 700;
       @include responsive-font(70px, 14.25vw, 228px, 1.2);
       text-transform: uppercase;
-      background: linear-gradient(270deg, #fff826 0%, #0938d3 100%);
+      background: linear-gradient(270deg, #FFC2E6 0%, #FF66C4 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -418,7 +418,7 @@
     z-index: 0;
   }
   &-6{
-    background: rgba(255, 248, 38, 0.9);
+    background: rgba(255, 194, 230, 0.9);
     bottom: 20%;
     content: "";
     filter: blur(150px);
@@ -781,7 +781,7 @@
       }
     }
     &:before{
-      background: linear-gradient(180deg, #0938D3 0%, #13132E 56.56%);
+      background: linear-gradient(180deg, #FF66C4 0%, #111111 56.56%);
       content: "";
       height: 100%;
       left: 0;
@@ -1078,7 +1078,7 @@
     // padding: 70px 0 60px;
   }
   &:before{
-    background: rgba(255, 248, 38, 0.4);
+    background: rgba(255, 194, 230, 0.4);
     border-radius: 50%;
     bottom: 0;
     content: "";

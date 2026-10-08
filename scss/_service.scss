@@ -383,7 +383,7 @@
   .bg-shape{
     position: relative;
     &:before{
-      background: rgba(255, 248, 38, 0.9);
+      background: rgba(255, 194, 230, 0.9);
       bottom: -300px;
       content: "";
       filter: blur(150px);
@@ -625,7 +625,7 @@
       padding: 47px 15px 45px;
     }
     &:before {
-      background: linear-gradient(289.05deg, #FFF826 16.47%, #0938D3 76.33%);
+      background: linear-gradient(289.05deg, #FFC2E6 16.47%, #FF66C4 76.33%);
       border-radius: 30px;
       content: "";
       position: absolute;
@@ -685,7 +685,7 @@
           background-color: rgba(var(--theme-color-white-rgb), .5);
         }
         .icon-box {
-          background: linear-gradient(289.05deg, #FFF826 16.47%, #0938D3 76.33%);
+          background: linear-gradient(289.05deg, #FFC2E6 16.47%, #FF66C4 76.33%);
           transform: rotate(-45deg) scale(1);
           &:hover {
             transform: rotate(0deg) scale(1);
@@ -1372,7 +1372,7 @@
   }
   &.style3{
     .inner-block{
-      background: linear-gradient(284.05deg, #0938D3 8.66%, rgba(244, 233, 252, 0.54) 92.88%);
+      background: linear-gradient(284.05deg, #FF66C4 8.66%, rgba(244, 233, 252, 0.54) 92.88%);
       height: 100%;
       max-height: 440px;
       overflow: hidden;

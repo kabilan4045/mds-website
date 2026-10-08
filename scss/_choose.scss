@@ -206,7 +206,7 @@
         z-index: 2;
         @include transition(all .3s ease);
         [data-tm-layout="dark"] & {
-            background-color: #13132e;
+            background-color: #111111;
         }
         @include media-breakpoint-down(xxxl) {
             padding: 20px;
@@ -234,7 +234,7 @@
             background-color: var(--theme-color-dark);
             @include transition(all .4s ease);
             [data-tm-layout="dark"] & {
-                background-color: #13132e;
+                background-color: #111111;
             }
         }
 
